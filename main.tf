@@ -16,6 +16,7 @@ resource "aws_elasticache_replication_group" "redis" {
   snapshot_window            = var.snapshot_window
   snapshot_retention_limit   = var.snapshot_retention_limit
   auto_minor_version_upgrade = var.auto_minor_version_upgrade
+  automatic_failover_enabled = var.automatic_failover_enabled
 
   at_rest_encryption_enabled = var.at_rest_encryption_enabled
   transit_encryption_enabled = var.transit_encryption_enabled
